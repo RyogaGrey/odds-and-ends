@@ -1,0 +1,3 @@
+Analyse the data as a whole in order to use it to make decisions.
+Probably. Calculating metrics, forming and hypothesis testing.
+Something else, I don't know
