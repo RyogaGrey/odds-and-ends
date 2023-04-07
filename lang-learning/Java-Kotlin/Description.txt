@@ -1,0 +1,2 @@
+Well, here will be the type of projects in Java, Kotlin and other JVM related languages, in which I will repeat or learn different technologies or techniques.
+Maybe, maybe not.
