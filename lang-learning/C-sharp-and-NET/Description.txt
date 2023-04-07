@@ -1,0 +1,2 @@
+Well, there will be material from projects in C# or using the .NET platform, in which I will be repeating or learning different techniques or technologies.
+Maybe, or maybe not, or maybe yes.
