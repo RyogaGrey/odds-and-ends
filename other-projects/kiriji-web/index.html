@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Заглушка для сайта</title>
+</head>
+
+<body>
+    <h1>Введите текст для замены:</h1>
+    <textarea id="original"></textarea>
+    <button onclick="replaceText()">Заменить</button>
+
+
+    <h1>Измененный текст:</h1>
+    <p id="changed"></p>
+    <script>
+        function replaceText() {
+            var originalText = document.getElementById("original").value;
+            var words = originalText.split(" ");
+            var replacedWords = [];
+            for (var i = 0; i < words.length; i++) {
+                var word = words[i];
+                if (word.length > 1) {
+                    var firstLetter = word.charAt(0);
+                    var lastLetter = word.charAt(word.length - 1);
+                    var middleLetters = word.slice(1, word.length - 1);
+                    var replacedWord = lastLetter + middleLetters + firstLetter;
+                    replacedWords.push(replacedWord);
+                } else {
+                    replacedWords.push(word);
+                }
+            }
+            var changedText = replacedWords.join(" ");
+            document.getElementById("changed").innerHTML = changedText;
+        }
+    </script>
+</body>
+
+</html>
